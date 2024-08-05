@@ -50,12 +50,10 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
-  color: inherit;
 }
 
 .parent .box:nth-child(1) {
   background-color: orangered;
-  /* border-radius: 20px 0px 0px 20px; */
 }
 .parent .box:nth-child(1) .btn {
   color: orangered;
@@ -63,7 +61,6 @@
 
 .parent .box:nth-child(2) {
   background-color: rgb(22, 117, 148);
-  /* border-radius: 0; */
 }
 .parent .box:nth-child(2) .btn {
   color: rgb(22, 117, 148);
@@ -71,8 +68,27 @@
 
 .parent .box:nth-child(3) {
   background-color: rgb(68, 66, 66);
-  /* border-radius: 0px 20px 20px 0px; */
 }
 .parent .box:nth-child(3) .btn {
   color: rgb(68, 66, 66);
+}
+
+@media (min-width: 576px) {
+  .parent {
+    width: 500px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .parent {
+    width: 800px;
+  }
+}
+
+@media (min-width: 992px) {
+  .parent {
+    width: 900px;
+  }
 }

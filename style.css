@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 700px;
+  height: 350px;
+  margin: 15vh auto 0;
+  display: flex;
+  color: white;
+  border-radius: 20px;
+}
+
+.parent .box {
+  border: 1px solid black;
+  width: 225px;
+  height: 100%;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  padding-right: 30px;
+  letter-spacing: 1.4px;
+  border-radius: 20px;
+}
+
+.parent .box .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.5;
+  font-size: 30px;
+  transform: rotateY(180deg);
+}
+
+.parent .box p {
+  line-height: 1.4;
+  word-spacing: 2px;
+  font-size: 12px;
+}
+
+.parent .box .btn {
+  padding: 10px 20px;
+  width: 75%;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.parent .box:nth-child(1) {
+  background-color: orangered;
+  border-radius: 20px 0px 0px 20px;
+}
+.parent .box:nth-child(1) .btn {
+  color: orangered;
+}
+
+.parent .box:nth-child(2) {
+  background-color: rgb(22, 117, 148);
+  border-radius: 0;
+}
+.parent .box:nth-child(2) .btn {
+  color: rgb(22, 117, 148);
+}
+
+.parent .box:nth-child(3) {
+  background-color: rgb(68, 66, 66);
+  border-radius: 0px 20px 20px 0px;
+}
+.parent .box:nth-child(3) .btn {
+  color: rgb(68, 66, 66);
+}
